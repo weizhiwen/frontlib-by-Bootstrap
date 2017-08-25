@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../img/favicon.ico">
-    <title>开放性实验室中心-实验室</title>
+    <link rel="icon" href="../../img/favicon.ico">
+    <title>开放性实验室中心-实验室设备</title>
     <meta name="author" content="weizhiwen">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../../css/index.css">
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="container body-lib">
+    <div class="container body">
       <!-- 头部导航开始 -->
       <div class="head">
         <div class="container-fluid head-logo">
-          <img src="../img/logo.png" alt="主页图片" class="img-responsive center-block">
+          <img src="../../img/logo.png" alt="主页图片" class="img-responsive center-block">
         </div>
         <nav class="navbar navbar-default">
           <div class="container">
@@ -69,49 +69,36 @@
       <!-- 主体内容开始 -->
       <div class="main-lib col-md-12">
           <div class="list-group col-md-3">
-            <h3><span class="glyphicon glyphicon-flag"></span> 实验室信息</h3>
-            <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-chevron-right"></span> 实验室介绍</a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室优势及特色</a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室条件</a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室注意事项</a>
+            <h3><span class="glyphicon glyphicon-flag"></span> 实验室设备</h3>
+            <!-- 下面的标题从数据库读取 -->
+            <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-chevron-right"></span> 可用</a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 不可用</a>
+            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 报废</a>
           </div>
           <div class="col-md-9">
             <ol class="breadcrumb">
               <span class="glyphicon glyphicon-map-marker"></span> 
               <li><a href="#">开放性实验室</a></li>
               <li><a href="#">实验室中心</a></li>
-              <li class="active">实验室介绍</li>
+              <li class="active">实验室设备</li>
             </ol>
             <hr>
-            <ul class="list-group">
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">学校2016年新增本科专业的申报材料公示<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">关于公布长江大学第三批重点专业的通知<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">教育部关于公布2014年度普通高等学校本科专业备案或审批结果的通知 ...<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...</a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">学校2016年新增本科专业的申报材料公示<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">关于公布长江大学第三批重点专业的通知<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">教育部关于公布2014年度普通高等学校本科专业备案或审批结果的通知 ...<span class="pull-right">2017 - 8 - 23</span></a></li>
-            </ul>
-            <nav aria-label="Page navigation" class="text-center">
-              <ul class="pagination">
-                <li>
-                  <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                  <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            <table class="table table-hover table-bordered">
+              <caption class="h4 text-center">实验室设备表</caption> 
+              <thead>
+                <tr>
+                  <th>序号</th><th>设备名称</th><th>购置时间</th><th>设备状态</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td><td>二极管</td><td>2014</td><td>可用</td>
+                </tr>
+                <tr>
+                  <td>2</td><td>面包板</td><td>2014</td><td>可用</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
       </div>
       <hr>
