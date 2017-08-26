@@ -87,14 +87,12 @@ hr{color:#b4b4a0;background-color:#b4b4a0;height:1.5px;line-height:1px;font-size
   border-left: 5px solid transparent;
 }
 
-
 .panel-bbs{
 	min-height: 330px;
 }
 
-
-@media (min-width: 768px) {
-	.bbs-content{
-		clear: both;
-	}	
+img.img-user{
+	width: 100px;
+	height: 100px;
+	border: 1px solid gray;
 }
