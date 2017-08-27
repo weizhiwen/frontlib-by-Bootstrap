@@ -85,6 +85,7 @@ hr{color:#b4b4a0;background-color:#b4b4a0;height:1.5px;line-height:1px;font-size
   border-right: 5px solid transparent;
   border-bottom: 5px solid;
   border-left: 5px solid transparent;
+  
 }
 
 .panel-bbs{
@@ -96,3 +97,15 @@ img.img-user{
 	height: 100px;
 	border: 1px solid gray;
 }
+
+img.img-commenter{
+	width: 50px;
+	height: 50px;
+	border: 1px solid gray;
+}
+
+.bbs-name{
+	font-size: 1.1em;
+	color:grey;
+}
+
