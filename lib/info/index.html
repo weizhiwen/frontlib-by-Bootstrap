@@ -3,129 +3,169 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
     <link rel="icon" href="../../img/favicon.ico">
     <title>开放性实验室中心-实验室信息</title>
-    <meta name="author" content="weizhiwen">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="container body-lib">
-      <!-- 头部导航开始 -->
+    <div class="container">
+      <!--页面头部开始-->
       <div class="head">
-        <div class="container-fluid head-logo">
-          <img src="../../img/logo.png" alt="主页图片" class="img-responsive center-block">
+        <div class="head-logo">
+          <img src="../../img/logo.png" alt="首页logo" class="img-responsive center-block" />
         </div>
-        <nav class="navbar navbar-default">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#head-nav" aria-expanded="false">
-                <span class="sr-only">切换导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">导航</a>
-            </div>
-            <div class="collapse navbar-collapse" id="head-nav">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#" class="font-weight"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle font-weight" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-star"></span> 实验室 <span class="caret"></span></a>
+        <div class="head-nav">
+          <nav class="navbar navbar-default">
+            <div class="container">      	
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="javascrpt:;" class="navbar-brand">导航</a>
+              </div>
+              <div class="collapse navbar-collapse" id="navigation">
+              	<ul class="nav navbar-nav">
+                <li><a href="#"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
+                <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-star"></span> 实验室 <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="../lib/index.html">实验室信息</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">实验室设备</a></li>
+                  	<li><a href="#">实验室信息</a></li>
+                  	<li><a href="#">实验室设备</a></li>
                   </ul>
                 </li>
-                <li><a href="#" class="font-weight"><span class="glyphicon glyphicon-user"></span> 教师队伍</a></li>
-                <li><a href="#" class="font-weight"><span class="glyphicon glyphicon-th-list"></span> 教学信息</a></li>
-                <li><a href="#" class="font-weight"><span class="glyphicon glyphicon-file"></span> 教学资源</a></li>
-                <li><a href="#" class="font-weight"><span class="glyphicon glyphicon-fire"></span> 教学论坛</a></li>
-                <li><a href="#" class="font-weight"><span class="glyphicon glyphicon-list-alt"></span> 规章制度</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 教师队伍</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-th-list"></span> 教师信息</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file"></span> 资源下载 <span class="caret">
+                  	
+                  </span></a>
+                  <ul class="dropdown-menu">
+                  	<li><a href="#">教学资源</a></li>
+                  	<li><a href="#">优秀作品</a></li>
+                  </ul>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-fire"></span> 教学论坛</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> 规章制度</a></li>
               </ul>
-              <form class="navbar-form navbar-left">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="站内搜索" size="12">
+              <form action="" method="get" class="navbar-form navbar-left">
+                <div class="input-group">               
+                  <input type="text" name="key" class="form-control" placeholder="站内搜索" size="12"/>
                   <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
                   </div>
                 </div>
               </form>
-              <ul class="nav navbar-nav">
-                <li><a href="#" class="font-weight"><span class="glyphicon glyphicon-hand-right" aria-hidden="true"></span> 实验预约入口</a></li>
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href=""><span class="glyphicon glyphicon-hand-right"></span> 实验预约入口</a></li>
               </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!--页面头部结束-->
+      
+      <!--页面主体开始-->
+      <div class="main set-height">
+        <div class="row">
+          <!--左侧栏导航开始-->
+          <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="list-group">
+                  <a class="list-group-item">
+                    <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-flag"></span> 实验室信息</h4>
+                  </a>
+                  <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-chevron-right"></span> 实验室介绍</a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室布局图</a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室优势及特色</a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室条件</a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室注意事项</a>
+                </div>  
             </div>
           </div>
-        </nav>
-      </div><!-- 头部导航结束 -->
-
-      <!-- 主体内容开始 -->
-      <div class="main-lib col-md-12">
-          <div class="list-group col-md-3">
-            <h3><span class="glyphicon glyphicon-flag"></span> 实验室信息</h3>
-            <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-chevron-right"></span> 实验室介绍</a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室布局图</a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室优势及特色</a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室条件</a>
-            <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 实验室注意事项</a>
-          </div>
+          <!--左侧栏导航结束-->
+          
+          <!--右边内容开始-->
           <div class="col-md-9">
-            <ol class="breadcrumb">
+            <ul class="breadcrumb">
               <span class="glyphicon glyphicon-map-marker"></span> 
               <li><a href="#">开放性实验室</a></li>
-              <li><a href="#">实验室中心</a></li>
+              <li><a href="#">实验室信息</a></li>
               <li class="active">实验室介绍</li>
-            </ol>
-            <hr>
-            <ul class="list-group">
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">学校2016年新增本科专业的申报材料公示<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">关于公布长江大学第三批重点专业的通知<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">教育部关于公布2014年度普通高等学校本科专业备案或审批结果的通知 ...<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...</a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">学校2016年新增本科专业的申报材料公示<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">关于公布长江大学第三批重点专业的通知<span class="pull-right">2017 - 8 - 23</span></a></li>
-              <li class="list-group-item list-dashed"><span class="glyphicon glyphicon-tag"></span> <a href="#">教育部关于公布2014年度普通高等学校本科专业备案或审批结果的通知 ...<span class="pull-right">2017 - 8 - 23</span></a></li>
             </ul>
-            <nav aria-label="Page navigation" class="text-center">
-              <ul class="pagination">
-                <li>
-                  <a href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                  </a>
-                </li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                  <a href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
+            
+            <!--信息列表开始-->
+            <div class="panel panel-default">
+            	<div class="panel-heading">
+            		<h5 class="panel-title">信息列表</h4>
+            	</div>
+            	<div class="panel-body">
+            		<div class="list-group">
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-tag"></span> 教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-tag"></span> 教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-tag"></span> 教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-tag"></span> 教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-tag"></span> 教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-tag"></span> 教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-tag"></span> 教育部关于公布2016年度普通高等学校本科专业备案和审批结果的通知...<span class="pull-right">2017 - 8 - 23</span></a>
+                </div>
+            	</div>
+            </div>
+            <!--信息列表结束-->
+            
+            <!--分页功能开始-->
+              <div class="text-center">
+              	<ul class="pagination">
+              	  <li>
+                    <a href="#">&laquo;</a>
+                  </li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li>
+                    <a href="#">2</a>
+                  </li>
+                  <li>
+                    <a href="#">3</a>
+                  </li>
+                  <li>
+                    <a href="#">4</a>
+                  </li>
+                  <li>
+                    <a href="#">5</a>
+                  </li>
+                  <li>
+                    <a href="#">&raquo;</a>
+                  </li>
+                </ul>
+              </div>
+            <!--分页功能结束-->
           </div>
+        </div>
       </div>
-      <hr>
-      <!-- 底部导航开始 -->
-      <div class="footer">
-        <p class="text-center">版权所有：XXX实验室中心&nbsp;&nbsp;&nbsp;技术支持：魏志文</p>
-      </div><!-- 底部导航结束 -->
+      <!--页面主题结束-->
+      
+      <!--页面底部开始-->
+      <div class="foot">
+        <hr />
+        <p class="text-center">版权所有：XXX实验室中心&nbsp;&nbsp;&nbsp;技术支持：FH 团队</p>
+      </div>
+      <!--页面底部结束-->
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
     if(!window.jQuery) {
-        document.write('<scr' + 'ipt src="/js/bootstrap.min.js"></scr' + 'ipt>');
+        document.write('<scr' + 'ipt src="js/bootstrap.min.js"></scr' + 'ipt>');
     }
     </script>
   </body>

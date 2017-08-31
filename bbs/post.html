@@ -3,97 +3,105 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
     <link rel="icon" href="../img/favicon.ico">
-    <title>开放性实验室中心-教学论坛</title>
-    <meta name="author" content="weizhiwen">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/index.css">
+    <title>开放性实验室中心-教学论坛-我要发帖</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="container body-lib">
-      <div class="head-logo">
-        <img src="../img/bbs_logo.png" alt="教学论坛" class="img-responsive center-block">
-      </div>
-      <!-- 头部导航开始 -->
-      <nav class="bbs-nav container-fluid well well-sm">
-        <a class="bbs-nav-item active font-weight" href="#">C语言</a>
-        <a class="bbs-nav-item active font-weight" href="#">C++</a>
-        <a class="bbs-nav-item font-weight" href="#">Java</a>
-        <a class="bbs-nav-item font-weight" href="#">C#</a>
-        <a class="bbs-nav-item font-weight" href="#">数字电子实验</a>
-        <a class="bbs-nav-item font-weight" href="#">单片机</a>
-        <form class="navbar-form navbar-right">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="搜索帖子" size="12">
-            <div class="input-group-btn">
-              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-            </div>
-          </div>
-        </form>
-      </nav><!-- 头部导航结束 -->
-      <hr>
-      <!-- 主体内容开始  -->
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">发布帖子<small>（默认为Markdown编辑器）</small></h3>
+    <div class="container">
+      <!--页面头部开始-->
+      <div class="head">
+        <div class="head-logo">
+          <img src="../img/bbs_logo.png" alt="教学论坛" class="img-responsive center-block" />
         </div>
-        <div class="panel-body">
-          <form action="test.html" method="get">
-            <div class="form-horizontal">
-              <div class="form-group form-inline">
-                <label for="postType" class="control-label col-md-1">帖子类型</label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="postType" value="1"> C语言
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="postType" value="2"> Java
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="postType" value="3"> 单片机
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="postType" value="4"> 数字电子实验
-                </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="postType" value="5"> C#
-                </label>
-              </div>
-              <div class="form-group form-inline">
-                <label for="postTitle" class="control-label col-md-1">帖子标题</label>
-                <div class="col-md-5">
-                  <input type="text" name="title" class="form-control" id="postTitle" placeholder="帖子标题不超过35个字">
+        
+        <!--论坛导航开始-->
+        <div class="container-fluid">
+        	<div class="row bbs-nav">
+            <ul class="nav nav-pills">
+              <li><a href="#">C语言</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C#</a></li>
+              <li><a href="#">数字电子实验</a></li>
+              <li><a href="#">单片机</a></li>
+              <form action="" method="get" class="form-inline pull-right">
+                <div class="input-group">               
+                  <input type="text" name="key" class="form-control" placeholder="搜索帖子" size="15"/>
+                  <div class="input-group-btn">
+                      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <textarea name="post" id="bbsEditor" placeholder="发篇帖子吧" rows="10"></textarea>
-            <br>
-            <p class="text-center"><button type="submit" class="btn btn-default btn-primary">发布</button></p>
-          </form>
+              </form>
+            </ul>
+          </div>
         </div>
-      </div><!-- 主体内容结束 -->
-
-      <!-- 底部导航开始 -->
-      <div class="footer">
-        <p class="text-center">版权所有：XXX实验室中心&nbsp;&nbsp;&nbsp;技术支持：魏志文</p>
-      </div><!-- 底部导航结束 -->
+        <!--论坛导航结束-->
+      </div>
+      <!--页面头部结束-->
+      
+      <!--页面主体开始-->
+      <div class="main">
+      	<div class="panel panel-default">
+      		<div class="panel-heading">
+      			 <h3 class="panel-title">发布帖子<small>（默认为Markdown编辑器）</small></h3>
+      		</div>
+      		<div class="panel-body">
+      			<form action="" method="get" class="form-horizontal">
+      				<div class="form-group">
+      					<label class="col-md-1 control-label">帖子类型</label>
+                <label class="radio-inline"><input type="radio" name="postType" /> C语言</label>
+                <label class="radio-inline"><input type="radio" name="postType" /> Java</label>
+                <label class="radio-inline"><input type="radio" name="postType" /> 单片机</label>
+                <label class="radio-inline"><input type="radio" name="postType" /> 数字电子实验</label>
+                <label class="radio-inline"><input type="radio" name="postType" /> C#</label>
+                <label class="radio-inline"><input type="radio" name="postType" /> 其他</label>
+      				</div>
+      				<div class="form-group">
+      					<label for="PostTitle" class="col-md-1 control-label">帖子标题</label>
+      					<div class="col-md-4">
+      						<input type="text" class="form-control" name="PostTitle" id="PostTitle" placeholder="帖子标题不超过 35个字" size="12"/>
+      					</div>
+      				</div>
+      				<div class="form-group">
+      					<textarea name="postContent" id="editor" placeholder="发篇帖子吧" ></textarea>
+      				</div>
+      				<div class="form-group text-center">
+      					<input type="submit" class="btn btn-primary btn-sm" value="发布"/>
+      				</div>
+      			</form>
+      		</div>
+      	</div>
+      </div>
+      <!--页面主体结束-->
+      
+      <!--页面底部开始-->
+      <div class="foot">
+        <hr />
+        <p class="text-center">版权所有：XXX实验室中心&nbsp;&nbsp;&nbsp;技术支持：FH团队</p>
+      </div>
+      <!--页面底部结束-->
     </div>
-      <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-      <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-      <script>
-        if(!window.jQuery) {
-          document.write('<scr' + 'ipt src="../js/bootstrap.min.js"></scr' + 'ipt>');
-        }
-      </script>
-      <script type="text/javascript" src="../js/mditor.js"></script>
-      <script>
-        var bbsTextarea = document.getElementById('bbsEditor');
-        var editor = new mditor(bbsTextarea);
-      </script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+    if(!window.jQuery) {
+        document.write('<scr' + 'ipt src="js/bootstrap.min.js"></scr' + 'ipt>');
+    }
+    </script>
+    <script type="text/javascript" src="../js/mditor.js"></script>
+    <script>
+      var postEditor = document.getElementById('editor');
+      var meditor = new mditor(postEditor);
+    </script>
   </body>
 </html>

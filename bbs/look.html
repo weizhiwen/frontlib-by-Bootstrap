@@ -3,105 +3,140 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
     <link rel="icon" href="../img/favicon.ico">
     <title>开放性实验室中心-我的帖子</title>
-    <meta name="author" content="weizhiwen">
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <div class="container body-lib">
-      <div class="head-logo">
-        <img src="../img/bbs_logo.png" alt="教学论坛" class="img-responsive center-block">
-      </div>
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <span class="hidden-xs"><span class="glyphicon glyphicon-calendar"></span> 2017 年 8 / 23 星期三</span>
-          <strong class="color-red pull-right"><span class="glyphicon glyphicon-bullhorn color-yellow font-weight"></span> 特别通知：教学论坛开始公测啦，欢迎各位同学使用！</strong>
+    <div class="container">
+      <!--页面头部开始-->
+      <div class="head">
+        <div class="head-logo">
+          <img src="../img/bbs_logo.png" alt="教学论坛" class="img-responsive center-block" />
         </div>
+        
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <span class="hidden-xs"><span class="glyphicon glyphicon-calendar"></span> 2017 年 8 / 23 星期三</span>
+            <span class="pull-right"><span class="glyphicon glyphicon-bullhorn"></span> 特别通知：教学论坛开始公测啦，欢迎各位同学使用！</span>
+          </div>
+        </div>
+        
+        <!--论坛导航开始-->
+        <div class="container-fluid">
+        	<div class="row bbs-nav">
+            <ul class="nav nav-pills">
+              <li><a href="#">C语言</a></li>
+              <li><a href="#">C++</a></li>
+              <li><a href="#">Java</a></li>
+              <li><a href="#">C#</a></li>
+              <li><a href="#">数字电子实验</a></li>
+              <li><a href="#">单片机</a></li>
+              <form action="" method="get" class="form-inline pull-right">
+                <div class="input-group">               
+                  <input type="text" name="key" class="form-control" placeholder="搜索帖子" size="15"/>
+                  <div class="input-group-btn">
+                      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                  </div>
+                </div>
+              </form>
+            </ul>
+          </div>
+        </div>
+        <!--论坛导航结束-->
       </div>
-      <!-- 头部导航开始 -->
-      <nav class="bbs-nav container-fluid well well-sm">
-        <a class="bbs-nav-item active font-weight" href="#">C语言</a>
-        <a class="bbs-nav-item active font-weight" href="#">C++</a>
-        <a class="bbs-nav-item font-weight" href="#">Java</a>
-        <a class="bbs-nav-item font-weight" href="#">C#</a>
-        <a class="bbs-nav-item font-weight" href="#">数字电子实验</a>
-        <a class="bbs-nav-item font-weight" href="#">单片机</a>
-        <form class="navbar-form navbar-right">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="搜索帖子" size="12">
-            <div class="input-group-btn">
-              <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+      <!--页面头部结束-->
+      
+      <!--页面主体开始-->
+      <div class="main"  style="margin-top: 10px;">
+        <div class="row container">
+          <!--下面的两个按钮只在手机端显示-->
+          <p class="visible-xs text-center"><a href="#" class="btn btn-info btn-block">我要发帖</a> <a href="#" class="btn btn-info btn-block">我的帖子</a></p>
+          <!--帖子列表开始-->
+          <div class="col-md-9">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title"><span class="glyphicon glyphicon-envelope"></span> 我的帖子 <small>点击帖子查看评论</small><a href="#" class="pull-right">查看更多</a></h3>
+              </div>
+              <div class="panel-body">
+                <div class="list-group">
+                  <a href="#" class="list-group-item">C语言怎么学习呀？<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item">感觉什么都不会怎么办？<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item">C语言怎么学习呀？<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item">感觉什么都不会怎么办？<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item">C语言怎么学习呀？<span class="pull-right">2017 - 8 - 23</span></a>
+                  <a href="#" class="list-group-item">感觉什么都不会怎么办？<span class="pull-right">2017 - 8 - 23</span></a>
+                </div>
+              </div>
+            </div>
+            
+            <!--分页功能开始-->
+            <div class="text-center">
+              <ul class="pagination">
+                <li>
+                  <a href="#">&laquo;</a>
+                </li>
+                <li class="active"><a href="#">1</a></li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+                <li>
+                  <a href="#">4</a>
+                </li>
+                <li>
+                  <a href="#">5</a>
+                </li>
+                <li>
+                  <a href="#">&raquo;</a>
+                </li>
+              </ul>
+            </div>
+          <!--分页功能结束-->
+          </div>
+          <!--帖子列表结束-->
+          <div class="col-md-3 hidden-xs">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center"><span class="glyphicon glyphicon-user"></span> 当前用户</h4>
+              </div>
+              <div class="panel-body text-center">
+                <img src="../img/qq.png" alt="用户头像" class="img-circle img-thumbnail"/>
+                <div class="caption">
+                  <h5>腾小Q</h5>
+                  <p>发帖数量：<span>12</span></p>
+                  <p><a href="#" class="btn btn-info">我要发帖</a> <a href="#" class="btn btn-info">我的帖子</a></p>
+                </div>
+              </div>
             </div>
           </div>
-        </form>
-      </nav><!-- 头部导航结束 -->
-
-      <!-- 页面主体内容开始 -->
-      <p class="visible-xs text-center"><a href="#" class="btn btn-primary" role="button">我要发帖</a> <a href="#" class="btn btn-primary" role="button">我的帖子</a></p>
-      <div class="col-md-9 col-sm-12">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title"><span class="font-weight"><span class="glyphicon glyphicon-envelope"></span> 我的帖子 <small>点击帖子查看评论</small></span><a href="#" class="pull-right text-info">查看更多</a></h3>
-          </div>
-          <div class="panel-body panel-bbs">
-            <div class="well well-sm">C语言怎么学习呀？<span class="pull-right">2017 - 8 - 23</span></div>
-            <div class="well well-sm">感觉什么都不会怎么办？<span class="pull-right">2017 - 8 - 23</span></div>
-            <div class="well well-sm">C语言怎么学习呀？<span class="pull-right">2017 - 8 - 23</span></div>
-            <div class="well well-sm">感觉什么都不会怎么办？<span class="pull-right">2017 - 8 - 23</span></div>
-          </div>
-          <nav aria-label="Page navigation" class="text-center">
-            <ul class="pagination">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-              </li>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"><span ></span> </span>
-                </a>
-              </li>
-            </ul>
-          </nav>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12 hidden-xs">
-        <div class="thumbnail">
-          <span class="h4"><span class="glyphicon glyphicon-user"></span> 当前用户</span>
-          <img src="../img/qq.png" alt="用户头像" class="img-circle img-user">
-          <div class="caption text-center">
-            <p><span class="h3">腾小Q</span></p>
-            <p>发帖数量：<span>12</span></p>
-            <p><a href="#" class="btn btn-primary" role="button">我要发帖</a> <a href="#" class="btn btn-primary" role="button">我的帖子</a></p>
-          </div>
-        </div>
+      <!--页面主体结束-->
+      
+      <!--页面底部开始-->
+      <div class="foot">
+        <hr />
+        <p class="text-center">版权所有：XXX实验室中心&nbsp;&nbsp;&nbsp;技术支持：FH团队</p>
       </div>
-      <!-- 页面主体内容结束 -->
-      <hr>
-      <!-- 底部导航开始 -->
-      <div class="footer">
-        <p class="text-center">版权所有：XXX实验室中心&nbsp;&nbsp;&nbsp;技术支持：魏志文</p>
-      </div><!-- 底部导航结束 -->
+      <!--页面底部结束-->
     </div>
-  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
     if(!window.jQuery) {
-        document.write('<scr' + 'ipt src="../js/bootstrap.min.js"></scr' + 'ipt>');
+        document.write('<scr' + 'ipt src="js/bootstrap.min.js"></scr' + 'ipt>');
     }
     </script>
   </body>
