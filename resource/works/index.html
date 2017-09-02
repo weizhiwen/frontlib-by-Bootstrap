@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit">
-    <link rel="icon" href="../img/favicon.ico">
-    <title>开放性实验室中心-教师队伍</title>
-    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" href="../../img/favicon.ico">
+    <title>开放性实验室中心-优秀作品下载</title>
+    <link rel="stylesheet" type="text/css" href="../../css/main.css"/>
+    <link href="../../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
 
     <!--[if lt IE 9]>
@@ -16,12 +16,12 @@
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="huawen">
     <div class="container">
       <!--页面头部开始-->
       <div class="head">
         <div class="head-logo">
-          <img src="../img/logo.png" alt="首页logo" class="img-responsive center-block" />
+          <img src="../../img/logo.png" alt="首页logo" class="img-responsive center-block" />
         </div>
         <div class="head-nav">
           <nav class="navbar navbar-default">
@@ -36,7 +36,7 @@
               </div>
               <div class="collapse navbar-collapse" id="navigation">
               	<ul class="nav navbar-nav">
-                <li><a href="#"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> 主页</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-star"></span> 实验室 <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -44,8 +44,8 @@
                   	<li><a href="#">实验室设备</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> 教师队伍</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-th-list"></span> 教学信息</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 教师队伍</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-th-list"></span> 教师信息</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-file"></span> 资源下载 <span class="caret">
                   	
@@ -81,12 +81,13 @@
         <div class="row">
           <!--左侧栏导航开始-->
           <div class="col-md-3">
-          	<div class="panel panel-default">
+            <div class="panel panel-default">
                 <div class="list-group">
-                	<a class="list-group-item">
-                	  <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-flag"></span> 教学队伍</h4>
-                	</a>
-                	<a href="#" class="list-group-item active"><span class="glyphicon glyphicon-chevron-right"></span> 教师情况</a>
+                  <a class="list-group-item">
+                    <h4 class="list-group-item-heading"><span class="glyphicon glyphicon-flag"></span> 资源下载</h4>
+                  </a>
+                  <a href="#" class="list-group-item"><span class="glyphicon glyphicon-chevron-right"></span> 教学资源</a>
+                  <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-chevron-right"></span> 优秀作品</a>
                 </div>  
             </div>
           </div>
@@ -96,28 +97,34 @@
           <div class="col-md-9">
             <ul class="breadcrumb">
               <span class="glyphicon glyphicon-map-marker"></span> 
-            	<li><a href="#">开放性实验室</a></li>
-            	<li><a href="#">教学队伍</a></li>
-            	<li class="active">教师信息</li>
+              <li><a href="#">开放性实验室</a></li>
+              <li><a href="#">资源下载</a></li>
+              <li class="active">优秀作品</li>
             </ul>
             
-            <table class="table table-bordered table-hover table-responsive table-striped text-center">
-              <caption class="h4 text-center">教师情况一览表<small>（点击教师姓名可查看教师完整信息）</small></caption> 
+            <table class="table table-hover table-responsive table-striped text-center">
+              <caption class="h4 text-center">优秀作品下载<small>（点击作品名称查看作品详情）</small></caption> 
               <thead class="text-center">
-                <tr><td>序号</td><td>教师姓名</td><td>教师职称</td></tr>
+                <tr><td>序号</td><td>优秀作品名称</td><td>所属分类</td><td>一键下载</td></tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td><td><a href="#">刘老师</a></td><td>副教授</td>                    
+                  <td>1</td><td><a href="#">基于Bootstrap的前台页面</a></td><td>暂无分类</td><td><a href=""> <span class="glyphicon glyphicon-download-alt"></span> </a></td>                    
                 </tr>
                 <tr>
-                  <td>2</td><td><a href="#">王老师</a></td><td>教授</td>                    
+                  <td>2</td><td><a href="#">基于java的长大医疗系统</a></td><td>暂无分类</td><td><a href=""> <span class="glyphicon glyphicon-download-alt"></span> </a></td>                    
                 </tr>
                 <tr>
-                  <td>3</td><td><a href="#">李老师</a></td><td>副教授</td>                    
+                  <td>3</td><td><a href="#">基于javaEE的开放性实验室</a></td><td>暂无分类</td><td><a href=""> <span class="glyphicon glyphicon-download-alt"></span> </a></td>                    
                 </tr>
                 <tr>
-                  <td>4</td><td><a href="#">张老师</a></td><td>讲师</td>                    
+                  <td>1</td><td><a href="#">基于Bootstrap的前台页面</a></td><td>暂无分类</td><td><a href=""> <span class="glyphicon glyphicon-download-alt"></span> </a></td>                    
+                </tr>
+                <tr>
+                  <td>2</td><td><a href="#">基于java的长大医疗系统</a></td><td>暂无分类</td><td><a href=""> <span class="glyphicon glyphicon-download-alt"></span> </a></td>                    
+                </tr>
+                <tr>
+                  <td>3</td><td><a href="#">基于javaEE的开放性实验室</a></td><td>暂无分类</td><td><a href=""> <span class="glyphicon glyphicon-download-alt"></span> </a></td>                    
                 </tr>
               </tbody>
             </table>
@@ -130,7 +137,7 @@
       <!--页面底部开始-->
       <div class="foot">
         <hr />
-        <p class="text-center">版权所有：XXX实验室中心&nbsp;&nbsp;&nbsp;技术支持：FH 团队</p>
+        <p class="text-center">版权所有：XXX实验室中心&nbsp;&nbsp;&nbsp;技术支持：FH团队</p>
       </div>
       <!--页面底部结束-->
     </div>
@@ -138,7 +145,7 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script>
     if(!window.jQuery) {
-        document.write('<scr' + 'ipt src="js/bootstrap.min.js"></scr' + 'ipt>');
+        document.write('<scr' + 'ipt src="../../js/bootstrap.min.js"></scr' + 'ipt>');
     }
     </script>
   </body>
